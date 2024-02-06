@@ -240,7 +240,30 @@ img {
 }
 
 /* Swiper class */
+.swiper {
+    margin-inline: initial;
+}
 
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    content: '';
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    top: initial;
+    bottom: 0;
+    font-size: 1.5rem;
+    color: var(--black-color);
+} 
+
+.swiper-button-prev {
+    left: calc(50% - 8rem);
+}
+
+.swiper-button-next {
+    right: calc(50% - 8rem);
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */

@@ -27,6 +27,26 @@ const linkAction = () => {
 navLink.forEach(el => el.addEventListener('click', linkAction));
 
 
+//swiper
+let swiperHome = new Swiper('.home__swiper', {
+    loop: true,
+    grabCursor: true,
+    slidesPerView: "auto",
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 3,
+            centeredSlides: "auto"
+        },
+        1152: {
+            centeredSlides: "auto",
+            spaceBetween: -64
+        },
+    }
+});
 
 
 
