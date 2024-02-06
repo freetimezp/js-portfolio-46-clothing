@@ -156,7 +156,10 @@ img {
 }
 
 /* Background header */
-
+.bg-header {
+    background-color: var(--first-color);
+    box-shadow: 0 2px 16px hsla(0, 0%, 0%, .1);
+}
 
 /*=============== HOME ===============*/
 .home__container {
@@ -207,6 +210,7 @@ img {
 
 .home__article {
     text-align: center;
+    filter: blur(20px);
 }
 
 .home__product,
@@ -265,6 +269,11 @@ img {
 .swiper-button-next {
     right: calc(50% - 8rem);
 }
+
+.home .home__article.swiper-slide-active {
+    filter: blur(0);
+}
+
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
